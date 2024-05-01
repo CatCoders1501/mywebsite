@@ -10,14 +10,14 @@
     </head>
     <body>
         <?php
-            $mysqli = new mysqli("mysqlcluster5.registeredsite.com","rovadmin19","aqrw23Ds1","catcoderdb");
+$con = mysqli_connect("mysqlcluster5.registeredsite.com","rovadmin19","aqrw23Ds1","catcoderdb");
 
-            // Check connection
-            if ($mysqli -> connect_errno) {
-                echo "Failed to connect to MySQL: " . $mysqli -> connect_error;
-                exit();
-            }
-        ?>
+// Check connection
+if (mysqli_connect_errno()) {
+  echo "Failed to connect to MySQL: " . mysqli_connect_error();
+  exit();
+}
+?>
         <h1> Hello Peeps! </h1>
     </body>
 </html>
