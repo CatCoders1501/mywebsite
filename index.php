@@ -1,6 +1,6 @@
 <?php
 //Step1
- $db = mysqli_connect('localhost','username','password','database_name')
+ $db = mysqli_connect('mysqlcluster5.registeredsite.com','rovadmin19','aqrw23Ds1','catcoderdb')
  or die('Error connecting to MySQL server.');
 ?>
 
